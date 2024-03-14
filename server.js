@@ -3,7 +3,7 @@ const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require('body-parser');
 const morgan = require('morgan'); // for logging
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // Set up morgan middleware for logging
